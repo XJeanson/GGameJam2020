@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnContact : MonoBehaviour
+public class P1OnContact : MonoBehaviour
 {
     private bool wandIsFull = false;
     private string objectInWand;
@@ -16,14 +16,14 @@ public class OnContact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) Debug.Log("fire press");
-        if (Input.GetButtonDown("Fire1") && objectInWand != "" && wandIsFull)
+        if (Input.GetButtonDown("P1Fire1")) Debug.Log("fire press");
+        if (Input.GetButtonDown("P1Fire1") && objectInWand != "" && wandIsFull)
         {
             foreach (Transform child in gameObject.transform)
-                if (child.tag == gameObject.GetComponent<OnContact>().ObjectInWand)
+                if (child.tag == this.ObjectInWand)
                     child.GetComponent<MeshRenderer>().enabled = false;
-            ObjectInWand = "";
-            WandIsFull = false;
+            this.ObjectInWand = "";
+            this.WandIsFull = false;
         }
 
     }
