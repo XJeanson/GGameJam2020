@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8146089621768547406}
   m_Layer: 0
   m_Name: item
-  m_TagString: Untagged
+  m_TagString: RepairItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 2.21, z: 0}
+  m_Size: {x: 1.2301319, y: 1.2876534, z: 1.1822639}
+  m_Center: {x: -0.024499893, y: 2.1464608, z: 0.0048143864}
 --- !u!54 &8146089621768547406
 Rigidbody:
   m_ObjectHideFlags: 0
