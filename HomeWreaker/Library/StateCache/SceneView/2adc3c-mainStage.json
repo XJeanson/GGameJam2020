@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":23.047136306762697,"y":10.056638717651368,"z":-3.1966967582702638},"rotation":{"x":0.2495526373386383,"y":-0.48112723231315615,"z":0.14504753053188325,"w":0.8277714252471924},"size":10.0,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":3.0,"z":0.0},"rotation":{"x":0.333859384059906,"y":-0.2676025927066803,"z":0.09945622831583023,"w":0.8983808755874634},"size":22.0,"orthographic":false}
+>>>>>>> Dev_Max2.0

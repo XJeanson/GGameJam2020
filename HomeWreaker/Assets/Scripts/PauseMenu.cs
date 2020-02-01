@@ -28,6 +28,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameISPAused = false;
     }
+    public void Replay()
+    {
+        Time.timeScale = 1f;
+        GameISPAused = false;
+        //SceneManager.LoadScene("XavTest");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
     void Pause()
     {
         pauseMenuUi.SetActive(true);
