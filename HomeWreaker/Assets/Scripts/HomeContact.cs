@@ -6,7 +6,7 @@ public class HomeContact : MonoBehaviour
 {
     public int repairPoint;
     public int damagePoint;
-    public int health;
+    private int health = 50;
 
     private string playerTag;
 
@@ -22,21 +22,21 @@ public class HomeContact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(health);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.tag == playerTag && other.gameObject.GetComponent<OnContact>().WandIsFull)
         {
             if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
-                health += repairPoint;
+                health += 10;
             if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
-                health -= damagePoint;
+                health -= 10;
 
             other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
             other.gameObject.GetComponent<OnContact>().WandIsFull = false;
         }
     }
+
+    public int Health { get => health; set => health = value; }
 }
