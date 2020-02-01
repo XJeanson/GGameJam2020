@@ -35,7 +35,8 @@ public class HomeContact : MonoBehaviour
             if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
             {
                 health += 0.10f;
-                healthText.text = (health * 100).ToString();
+                int x = (int)(health * 100);
+                healthText.text = x.ToString();
                 healthBar.fillAmount = health;
                 if (health >= 1)
                 {
