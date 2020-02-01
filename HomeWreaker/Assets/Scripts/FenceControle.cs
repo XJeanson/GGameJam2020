@@ -16,32 +16,67 @@ public class FenceControle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire2") && isTrigger)
+        if (lastTrigger.tag == "Player1")
         {
-            if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
+            if (Input.GetButtonDown("Fire2") && isTrigger)
             {
-                GetComponent<BoxCollider>().enabled = false;
-                GetComponent<MeshRenderer>().enabled = false;
-                if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled)
+                if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<P1OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem")
                 {
-                    foreach (Transform child in lastTrigger.gameObject.transform)
-                        if (child.tag == lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand)
-                            child.GetComponent<MeshRenderer>().enabled = false;
-                    lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand = "";
-                    lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull = false;
+                    GetComponent<BoxCollider>().enabled = false;
+                    GetComponent<MeshRenderer>().enabled = false;
+                    if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled)
+                    {
+                        foreach (Transform child in lastTrigger.gameObject.transform)
+                            if (child.tag == lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand)
+                                child.GetComponent<MeshRenderer>().enabled = false;
+                        lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
+                        lastTrigger.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
+                    }
+                }
+                if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<P1OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand == "RepairItem")
+                {
+                    GetComponent<BoxCollider>().enabled = true;
+                    GetComponent<MeshRenderer>().enabled = true;
+                    if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled)
+                    {
+                        foreach (Transform child in lastTrigger.gameObject.transform)
+                            if (child.tag == lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand)
+                                child.GetComponent<MeshRenderer>().enabled = false;
+                        lastTrigger.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
+                        lastTrigger.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
+                    }
                 }
             }
-            if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
+        }
+        else
+        {
+            if (Input.GetButtonDown("Fire2") && isTrigger)
             {
-                GetComponent<BoxCollider>().enabled = true;
-                GetComponent<MeshRenderer>().enabled = true;
-                if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled)
+                if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<P2OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand == "DamageItem")
                 {
-                    foreach (Transform child in lastTrigger.gameObject.transform)
-                        if (child.tag == lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand)
-                            child.GetComponent<MeshRenderer>().enabled = false;
-                    lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand = "";
-                    lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull = false;
+                    GetComponent<BoxCollider>().enabled = false;
+                    GetComponent<MeshRenderer>().enabled = false;
+                    if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled)
+                    {
+                        foreach (Transform child in lastTrigger.gameObject.transform)
+                            if (child.tag == lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand)
+                                child.GetComponent<MeshRenderer>().enabled = false;
+                        lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
+                        lastTrigger.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
+                    }
+                }
+                if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<P2OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
+                {
+                    GetComponent<BoxCollider>().enabled = true;
+                    GetComponent<MeshRenderer>().enabled = true;
+                    if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled)
+                    {
+                        foreach (Transform child in lastTrigger.gameObject.transform)
+                            if (child.tag == lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand)
+                                child.GetComponent<MeshRenderer>().enabled = false;
+                        lastTrigger.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
+                        lastTrigger.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
+                    }
                 }
             }
         }
@@ -49,7 +84,7 @@ public class FenceControle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "player1" || other.tag == "Player2")
+        if (other.tag == "Player1" || other.tag == "Player2")
         {
             isTrigger = true;
             lastTrigger = other;
@@ -58,7 +93,7 @@ public class FenceControle : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "player1" || other.tag == "Player2")
+        if (other.tag == "Player1" || other.tag == "Player2")
         {
             isTrigger = false;
             lastTrigger = other;

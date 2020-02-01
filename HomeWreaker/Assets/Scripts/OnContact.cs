@@ -22,8 +22,8 @@ public class OnContact : MonoBehaviour
             foreach (Transform child in gameObject.transform)
                 if (child.tag == gameObject.GetComponent<OnContact>().ObjectInWand)
                     child.GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<OnContact>().ObjectInWand = "";
-            gameObject.GetComponent<OnContact>().WandIsFull = false;
+            ObjectInWand = "";
+            WandIsFull = false;
         }
 
     }

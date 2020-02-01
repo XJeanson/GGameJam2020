@@ -20,10 +20,10 @@ public class P2OnContact : MonoBehaviour
         if (Input.GetButtonDown("P2Fire1") && objectInWand != "" && wandIsFull)
         {
             foreach (Transform child in gameObject.transform)
-                if (child.tag == gameObject.GetComponent<P2OnContact>().ObjectInWand)
+                if (child.tag == this.ObjectInWand)
                     child.GetComponent<MeshRenderer>().enabled = false;
-            gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
-            gameObject.GetComponent<P2OnContact>().WandIsFull = false;
+            this.ObjectInWand = "";
+            this.WandIsFull = false;
         }
 
     }
