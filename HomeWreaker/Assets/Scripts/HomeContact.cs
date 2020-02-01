@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HomeContact : MonoBehaviour
 {
-    public int repairPoint;
-    public int damagePoint;
-    public int health;
+    private int repairPoint = 10;
+    private int damagePoint = 10;
+    private int health = 50;
 
     private string playerTag;
 
@@ -34,6 +34,8 @@ public class HomeContact : MonoBehaviour
                 health += repairPoint;
             if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
                 health -= damagePoint;
+
+            Debug.Log(health);
 
             other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
             other.gameObject.GetComponent<OnContact>().WandIsFull = false;
