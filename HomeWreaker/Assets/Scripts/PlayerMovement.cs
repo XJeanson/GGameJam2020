@@ -24,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
             // We are grounded, so recalculate
             // move direction directly from axes
 
-            Debug.Log(Input.GetAxis("Horizontal"));
-            Debug.Log(Input.GetAxis("Vertical"));
+            //Debug.Log(Input.GetAxis("Horizontal"));
+            //Debug.Log(Input.GetAxis("Vertical"));
 
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
             moveDirection *= speed;
