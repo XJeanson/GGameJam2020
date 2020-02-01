@@ -11,7 +11,6 @@ public class House : MonoBehaviour
     public float health = 500;
     public Image healthBar;
     public static bool GameISPAused = false;
-    public GameObject pauseMenuUi;
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -28,7 +27,6 @@ public class House : MonoBehaviour
     }
     public void Die()
     {
-        pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         GameISPAused = true;
         objectToDisable.SetActive(false);
