@@ -42,6 +42,9 @@ public class HomeContact : MonoBehaviour
                 {
                     GameIsOver();
                 }
+                foreach (Transform child in other.gameObject.transform)
+                    if (child.tag == other.gameObject.GetComponent<OnContact>().ObjectInWand)
+                        child.GetComponent<MeshRenderer>().enabled = false;
                 other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
                 other.gameObject.GetComponent<OnContact>().WandIsFull = false;
             }
@@ -58,6 +61,9 @@ public class HomeContact : MonoBehaviour
                 healthText.text = (health * 100).ToString();
                 GameIsOver();
             }
+            foreach (Transform child in other.gameObject.transform)
+                if (child.tag == other.gameObject.GetComponent<OnContact>().ObjectInWand)
+                    child.GetComponent<MeshRenderer>().enabled = false;
             other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
             other.gameObject.GetComponent<OnContact>().WandIsFull = false;
         }

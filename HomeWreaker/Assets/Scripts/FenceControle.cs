@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FenceControle : MonoBehaviour
 {
+    private bool isTrigger = false;
+    private Collider lastTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,33 +16,53 @@ public class FenceControle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetButtonDown("Fire2") && isTrigger)
+        {
+            if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
+            {
+                GetComponent<BoxCollider>().enabled = false;
+                GetComponent<MeshRenderer>().enabled = false;
+                if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled)
+                {
+                    foreach (Transform child in lastTrigger.gameObject.transform)
+                        if (child.tag == lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand)
+                            child.GetComponent<MeshRenderer>().enabled = false;
+                    lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand = "";
+                    lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull = false;
+                }
+            }
+            if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled && lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull && lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
+            {
+                GetComponent<BoxCollider>().enabled = true;
+                GetComponent<MeshRenderer>().enabled = true;
+                if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled)
+                {
+                    foreach (Transform child in lastTrigger.gameObject.transform)
+                        if (child.tag == lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand)
+                            child.GetComponent<MeshRenderer>().enabled = false;
+                    lastTrigger.gameObject.GetComponent<OnContact>().ObjectInWand = "";
+                    lastTrigger.gameObject.GetComponent<OnContact>().WandIsFull = false;
+                }
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled && other.gameObject.GetComponent<OnContact>().WandIsFull && other.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
+        if (other.tag == "player1" || other.tag == "Player2")
         {
-            GetComponent<BoxCollider>().enabled = false;
-            GetComponent<MeshRenderer>().enabled = false;
-            if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled)
-            {
-                other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
-                other.gameObject.GetComponent<OnContact>().WandIsFull = false;
-            }
+            isTrigger = true;
+            lastTrigger = other;
         }
-        if (!GetComponent<MeshRenderer>().enabled && !GetComponent<BoxCollider>().enabled && other.gameObject.GetComponent<OnContact>().WandIsFull && other.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "player1" || other.tag == "Player2")
         {
-            GetComponent<BoxCollider>().enabled = true;
-            GetComponent<MeshRenderer>().enabled = true;
-            if (GetComponent<MeshRenderer>().enabled && GetComponent<BoxCollider>().enabled)
-            {
-                other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
-                other.gameObject.GetComponent<OnContact>().WandIsFull = false;
-            }
+            isTrigger = false;
+            lastTrigger = other;
         }
-
-
     }
 
 }
