@@ -25,10 +25,13 @@ public class Player2Movements : MonoBehaviour
             // We are grounded, so recalculate
             // move direction directly from axes
 
-            moveDirection = new Vector3(Input.GetAxis("Horizontal1"), 0.0f, Input.GetAxis("Vertical1"));
+            Debug.Log(Input.GetAxis("P2Horizontal"));
+            Debug.Log(Input.GetAxis("P2Vertical"));
+
+            moveDirection = new Vector3(Input.GetAxis("P2Horizontal"), 0.0f, Input.GetAxis("P2Vertical"));
             moveDirection *= speed;
 
-            if (Input.GetButton("Jump1"))
+            if (Input.GetButton("Jump"))
             {
                 moveDirection.y = jumpSpeed;
             }
