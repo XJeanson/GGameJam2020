@@ -11,6 +11,7 @@ public class House : MonoBehaviour
     public float health = 500;
     public Image healthBar;
     public static bool GameISPAused = false;
+    private string playerTag;
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -31,6 +32,19 @@ public class House : MonoBehaviour
         GameISPAused = true;
         objectToDisable.SetActive(false);
         objectToEnable.SetActive(true);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == playerTag && other.gameObject.GetComponent<OnContact>().WandIsFull)
+        {
+            if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "RepairItem")
+                health += 10;
+            if (other.gameObject.GetComponent<OnContact>().ObjectInWand == "DamageItem")
+                health -= 10;
+
+            other.gameObject.GetComponent<OnContact>().ObjectInWand = "";
+            other.gameObject.GetComponent<OnContact>().WandIsFull = false;
+        }
     }
     // Start is called before the first frame update
     void Start()
