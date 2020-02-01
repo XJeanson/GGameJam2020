@@ -14821,7 +14821,7 @@ PrefabInstance:
     - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
       propertyPath: items.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
@@ -14839,7 +14839,7 @@ PrefabInstance:
         type: 3}
       propertyPath: items.Array.data[1]
       value: 
-      objectReference: {fileID: 5491858761175755350, guid: 2efa0963667906f408532a517378892e,
+      objectReference: {fileID: 5881321160509211162, guid: c45df57770c71124f9ee2d790afcdfee,
         type: 3}
     - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
@@ -14850,13 +14850,19 @@ PrefabInstance:
     - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
       propertyPath: ItemsAtStart
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
       propertyPath: timeBetweenItem
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6978577420662295988, guid: b001355d9304d7d42babb7fedca75b7e,
+        type: 3}
+      propertyPath: items.Array.data[4]
+      value: 
+      objectReference: {fileID: 5491858761175755350, guid: 2efa0963667906f408532a517378892e,
+        type: 3}
     - target: {fileID: 6978577420662295989, guid: b001355d9304d7d42babb7fedca75b7e,
         type: 3}
       propertyPath: m_Name
