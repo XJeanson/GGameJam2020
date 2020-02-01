@@ -395,7 +395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -770.13, y: -246.90001}
+  m_AnchoredPosition: {x: -748, y: -35}
   m_SizeDelta: {x: 310.4, y: 65.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407753201
@@ -897,7 +897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -713, y: 267}
+  m_AnchoredPosition: {x: -693.95, y: 262}
   m_SizeDelta: {x: 418.5, y: 150.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583439246
@@ -1588,8 +1588,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -338.03006, y: -255.35}
-  m_SizeDelta: {x: 440.3, y: 82.1}
+  m_AnchoredPosition: {x: -259.7, y: -26.549957}
+  m_SizeDelta: {x: 401.8, y: 82.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929057233
 MonoBehaviour:
@@ -1622,7 +1622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\tSoheib Djedaini"
+  m_Text: "\t  Soheib Djedaini"
 --- !u!222 &929057234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2365,7 +2365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -812.83, y: -7.100005}
+  m_AnchoredPosition: {x: -793.4, y: 88}
   m_SizeDelta: {x: 219.6, y: 69.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221911487
@@ -2444,8 +2444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375.03006, y: -79.350006}
-  m_SizeDelta: {x: 557.4, y: 213.8}
+  m_AnchoredPosition: {x: -261.23004, y: 110.45001}
+  m_SizeDelta: {x: 399, y: 56.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226185651
 MonoBehaviour:
@@ -2478,7 +2478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\tSteven Ujvari\n"
+  m_Text: "\t  Steven Ujvari\n"
 --- !u!222 &1226185652
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4139,7 +4139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1767192220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4984,8 +4984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671.45, y: -394}
-  m_SizeDelta: {x: 577.1, y: 98}
+  m_AnchoredPosition: {x: -720.7, y: -341}
+  m_SizeDelta: {x: 365, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134067189
 MonoBehaviour:
