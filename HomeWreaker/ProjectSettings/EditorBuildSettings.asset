@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/XavTest.unity
     guid: 7af0e02c91aebcc4786186a49e12a7af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level.unity
     guid: b569581270e9f314d85a34c33fbb9a6e
+  - enabled: 1
+    path: Assets/Scenes/Dev/assets.unity
+    guid: c74710589ec41e440b479b3b4244b93e
   m_configObjects: {}

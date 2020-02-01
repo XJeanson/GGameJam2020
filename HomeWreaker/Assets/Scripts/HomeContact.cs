@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HomeContact : MonoBehaviour
 {
-    public int repairPoint;
-    public int damagePoint;
+    public float repairPoint;
+    public float damagePoint;
     private float health = 0.50f;
     public Image healthBar;
     public GameObject objectToEnable;
@@ -36,7 +36,7 @@ public class HomeContact : MonoBehaviour
             {
                 if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "RepairItem")
                 {
-                    health += 0.10f;
+                    health += repairPoint;
                     int x = (int)(health * 100);
                     healthText.text = x.ToString();
                     healthBar.fillAmount = health;
@@ -53,7 +53,7 @@ public class HomeContact : MonoBehaviour
             }
             if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
             {
-                health -= 0.10f;
+                health -= damagePoint;
                 int x = (int)(health * 100);
                 healthText.text = x.ToString();
                 healthBar.fillAmount = health;
@@ -76,7 +76,7 @@ public class HomeContact : MonoBehaviour
             {
                 if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
                 {
-                    health += 0.10f;
+                    health += repairPoint;
                     int x = (int)(health * 100);
                     healthText.text = x.ToString();
                     healthBar.fillAmount = health;
@@ -93,7 +93,7 @@ public class HomeContact : MonoBehaviour
             }
             if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
             {
-                health -= 0.10f;
+                health -= damagePoint;
                 int x = (int)(health * 100);
                 healthText.text = x.ToString();
                 healthBar.fillAmount = health;
