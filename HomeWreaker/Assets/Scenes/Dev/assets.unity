@@ -5806,8 +5806,8 @@ MonoBehaviour:
   damagePoint: 0.1
   healthBar: {fileID: 955589243}
   objectToEnable: {fileID: 337624108}
-  canvasPlayer1ToEnable: {fileID: 0}
-  canvasPlayer2ToEnable: {fileID: 0}
+  canvasPlayer1ToEnable: {fileID: 724955436}
+  canvasPlayer2ToEnable: {fileID: 1929924715}
   healthText: {fileID: 569473176}
 --- !u!1 &177483664 stripped
 GameObject:
