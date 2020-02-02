@@ -15,10 +15,12 @@ public class Player1Movements : MonoBehaviour
     private float horizontal;
     private float vertical;
     private Vector3 direction;
+    private Animator anim;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -34,7 +36,16 @@ public class Player1Movements : MonoBehaviour
             //Debug.Log(Input.GetAxis("P1Vertical"));
 
             direction = new Vector3(horizontal, 0, vertical);
-            moveDirection = new Vector3(Input.GetAxis("P1Horizontal"), 0.0f, Input.GetAxis("P1Vertical"));
+
+            if ((Input.GetAxis("P1Horizontal") > 0.05 || Input.GetAxis("P1Horizontal") < -0.05) &&
+                (Input.GetAxis("P1Vertical") > 0.05 || Input.GetAxis("P1Vertical") < -0.05))
+                moveDirection = new Vector3(Input.GetAxis("P1Horizontal"), 0.0f, Input.GetAxis("P1Vertical"));
+            else
+            {
+                moveDirection = new Vector3(0.0f, 0.0f, 0.0f);
+                horizontal = 0f;
+                vertical = 0f;
+            }
             moveDirection *= speed;
 
             if (Input.GetButton("Jump"))
@@ -48,8 +59,21 @@ public class Player1Movements : MonoBehaviour
         // as an acceleration (ms^-2)
         moveDirection.y -= gravity * Time.deltaTime;
 
+        if(vertical > 0.05)
+            anim.SetFloat("Speed", vertical);
+        if (vertical < -0.05)
+            anim.SetFloat("Speed", vertical * -1);
+        if (horizontal > 0.05)
+            anim.SetFloat("Speed", horizontal);
+        if (horizontal < -0.05)
+            anim.SetFloat("Speed", horizontal * -1);
+        if (horizontal == 0f && vertical == 0f)
+            anim.SetFloat("Speed", 0f);
+
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
         characterController.transform.LookAt(transform.position + direction);
+
+        
     }
 }
