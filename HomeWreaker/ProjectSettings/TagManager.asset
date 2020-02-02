@@ -11,7 +11,6 @@ TagManager:
   - HUD
   - DamageItem
   - P2Home
-  - Body
   layers:
   - Default
   - TransparentFX
