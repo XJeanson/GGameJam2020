@@ -12,9 +12,6 @@ public class Player2Movements : MonoBehaviour
     public float gravity = 20.0f;
 
     private Vector3 moveDirection = Vector3.zero;
-    private float horizontal;
-    private float vertical;
-    private Vector3 direction;
 
     void Start()
     {
@@ -23,8 +20,6 @@ public class Player2Movements : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxis("P2Horizontal");
-        vertical = Input.GetAxis("P2Vertical");
         if (characterController.isGrounded)
         {
             // We are grounded, so recalculate
@@ -33,7 +28,6 @@ public class Player2Movements : MonoBehaviour
             //Debug.Log(Input.GetAxis("P2Horizontal"));
             //Debug.Log(Input.GetAxis("P2Vertical"));
 
-            direction = new Vector3(horizontal, 0, vertical);
             moveDirection = new Vector3(Input.GetAxis("P2Horizontal"), 0.0f, Input.GetAxis("P2Vertical"));
             moveDirection *= speed;
 
@@ -50,6 +44,5 @@ public class Player2Movements : MonoBehaviour
 
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
-        characterController.transform.LookAt(transform.position + direction);
     }
 }

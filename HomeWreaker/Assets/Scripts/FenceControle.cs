@@ -6,6 +6,8 @@ public class FenceControle : MonoBehaviour
 {
     private bool isTrigger = false;
     private Collider lastTrigger;
+    public GameObject buttonCanvasPlayer1;
+    public GameObject buttonCanvasPlayer2;
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +91,14 @@ public class FenceControle : MonoBehaviour
             isTrigger = true;
             lastTrigger = other;
         }
+        if (other.tag == "Player1")
+        {
+            buttonCanvasPlayer1.SetActive(true);
+        }
+        if (other.tag == "Player2")
+        {
+            buttonCanvasPlayer2.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -97,6 +107,14 @@ public class FenceControle : MonoBehaviour
         {
             isTrigger = false;
             lastTrigger = other;
+        }
+        if (other.tag == "Player1")
+        {
+            buttonCanvasPlayer1.SetActive(false);
+        }
+        if (other.tag == "Player2")
+        {
+            buttonCanvasPlayer2.SetActive(false);
         }
     }
 
