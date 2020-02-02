@@ -2518,7 +2518,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2985274327483381738}
-  - component: {fileID: 5976265089117210993}
   - component: {fileID: 2293772544024132558}
   - component: {fileID: 9183939631080807217}
   - component: {fileID: 2502284759376227689}
@@ -2547,23 +2546,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
---- !u!114 &5976265089117210993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9052570543251293558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ede196d85c64d464d82846575fd1afa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  repairPoint: 0
-  damagePoint: 0
-  healthBar: {fileID: 0}
-  objectToEnable: {fileID: 0}
-  healthText: {fileID: 0}
 --- !u!65 &2293772544024132558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2609,6 +2591,8 @@ MonoBehaviour:
   damagePoint: 0.1
   healthBar: {fileID: 0}
   objectToEnable: {fileID: 0}
+  canvasPlayer1ToEnable: {fileID: 0}
+  canvasPlayer2ToEnable: {fileID: 0}
   healthText: {fileID: 0}
 --- !u!64 &4696913259762466622
 MeshCollider:

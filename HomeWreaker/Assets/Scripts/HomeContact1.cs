@@ -10,8 +10,8 @@ public class HomeContact1 : MonoBehaviour
     private float health = 0.50f;
     public Image healthBar;
     public GameObject objectToEnable;
-    public GameObject canvasPlayer1ToEnable;
-    public GameObject canvasPlayer2ToEnable;
+    public Image canvasPlayer1ToEnable;
+    public Image canvasPlayer2ToEnable;
     private string playerTag;
     public static bool GameISPAused = false;
     public Text healthText;
@@ -53,9 +53,9 @@ public class HomeContact1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (playerTag == "Player1")
-        {
-            if (other.tag == playerTag && other.gameObject.GetComponent<P1OnContact>().WandIsFull)
+        //if (playerTag == "Player1")
+        //{
+            if (other.tag == "Player1" && other.gameObject.GetComponent<P1OnContact>().WandIsFull)
             {
                 if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "RepairItem")
                 {
@@ -74,7 +74,7 @@ public class HomeContact1 : MonoBehaviour
                     other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
                 }
             }
-            if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
+            if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "DamageItem" && other.tag == "Player2")
             {
                 health -= damagePoint;
                 int x = (int)(health * 100);
@@ -92,57 +92,58 @@ public class HomeContact1 : MonoBehaviour
                 other.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
                 other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
             }
-        }
-        else
-        {
-            if (other.tag == playerTag && other.gameObject.GetComponent<P2OnContact>().WandIsFull)
-            {
-                if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
-                {
-                    health += repairPoint;
-                    int x = (int)(health * 100);
-                    healthText.text = x.ToString();
-                    healthBar.fillAmount = health;
-                    if (health >= 1)
-                    {
-                        GameIsOver(playerTag);
-                    }
-                    foreach (Transform child in other.gameObject.transform)
-                        if (child.tag == other.gameObject.GetComponent<P2OnContact>().ObjectInWand)
-                            child.GetComponent<MeshRenderer>().enabled = false;
-                    other.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
-                    other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
-                }
-            }
-            if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
-            {
-                health -= damagePoint;
-                int x = (int)(health * 100);
-                healthText.text = x.ToString();
-                healthBar.fillAmount = health;
-                if (health <= 0.01)
-                {
-                    health = 0;
-                    healthText.text = (health * 100).ToString();
-                    GameIsOver("Player1");
-                }
-                foreach (Transform child in other.gameObject.transform)
-                    if (child.tag == other.gameObject.GetComponent<P1OnContact>().ObjectInWand)
-                        child.GetComponent<MeshRenderer>().enabled = false;
-                other.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
-                other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
-            }
-        }
+        //}
+        //else
+        //{
+        //    if (other.tag == playerTag && other.gameObject.GetComponent<P2OnContact>().WandIsFull)
+        //    {
+        //        if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
+        //        {
+        //            health += repairPoint;
+        //            int x = (int)(health * 100);
+        //            healthText.text = x.ToString();
+        //            healthBar.fillAmount = health;
+        //            if (health >= 1)
+        //            {
+        //                GameIsOver(playerTag);
+        //            }
+        //            foreach (Transform child in other.gameObject.transform)
+        //                if (child.tag == other.gameObject.GetComponent<P2OnContact>().ObjectInWand)
+        //                    child.GetComponent<MeshRenderer>().enabled = false;
+        //            other.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
+        //            other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
+        //        }
+        //    }
+        //    if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
+        //    {
+        //        health -= damagePoint;
+        //        int x = (int)(health * 100);
+        //        healthText.text = x.ToString();
+        //        healthBar.fillAmount = health;
+        //        if (health <= 0.01)
+        //        {
+        //            health = 0;
+        //            healthText.text = (health * 100).ToString();
+        //            GameIsOver("Player1");
+        //        }
+        //        foreach (Transform child in other.gameObject.transform)
+        //            if (child.tag == other.gameObject.GetComponent<P1OnContact>().ObjectInWand)
+        //                child.GetComponent<MeshRenderer>().enabled = false;
+        //        other.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
+        //        other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
+        //    }
+        //}
     }
     public void GameIsOver(string tag)
     {
         if (tag == "Player1")
         {
-            canvasPlayer1ToEnable.SetActive(true);
+            canvasPlayer1ToEnable.gameObject.SetActive(true);
+
         }
         else
         {
-            canvasPlayer2ToEnable.SetActive(true);
+            canvasPlayer2ToEnable.gameObject.SetActive(true);
         }
         Time.timeScale = 0f;
         GameISPAused = true;

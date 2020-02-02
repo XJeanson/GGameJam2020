@@ -9,10 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1324086198116825357}
-  - component: {fileID: 5499976218539838283}
   - component: {fileID: 1806067001129122336}
   - component: {fileID: 640589011237545355}
-  - component: {fileID: 6295239459589063710}
   m_Layer: 0
   m_Name: P1Home
   m_TagString: P1Home
@@ -37,23 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
---- !u!114 &5499976218539838283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496453574965458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ede196d85c64d464d82846575fd1afa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  repairPoint: 0
-  damagePoint: 0
-  healthBar: {fileID: 0}
-  objectToEnable: {fileID: 0}
-  healthText: {fileID: 0}
 --- !u!65 &1806067001129122336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83,23 +64,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &6295239459589063710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496453574965458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ede196d85c64d464d82846575fd1afa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  repairPoint: 0.1
-  damagePoint: 0.1
-  healthBar: {fileID: 0}
-  objectToEnable: {fileID: 0}
-  healthText: {fileID: 0}
 --- !u!1 &160551293238112330
 GameObject:
   m_ObjectHideFlags: 0

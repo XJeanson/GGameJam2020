@@ -53,49 +53,9 @@ public class HomeContact : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (playerTag == "Player1")
-        {
-            if (other.tag == playerTag && other.gameObject.GetComponent<P1OnContact>().WandIsFull)
-            {
-                if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "RepairItem")
-                {
-                    health += repairPoint;
-                    int x = (int)(health * 100);
-                    healthText.text = x.ToString();
-                    healthBar.fillAmount = health;
-                    if (health >= 1)
-                    {
-                        GameIsOver(playerTag);
-                    }
-                    foreach (Transform child in other.gameObject.transform)
-                        if (child.tag == other.gameObject.GetComponent<P1OnContact>().ObjectInWand)
-                            child.GetComponent<MeshRenderer>().enabled = false;
-                    other.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
-                    other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
-                }
-            }
-            if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
-            {
-                health -= damagePoint;
-                int x = (int)(health * 100);
-                healthText.text = x.ToString();
-                healthBar.fillAmount = health;
-                if (health <= 0.01)
-                {
-                    health = 0;
-                    healthText.text = (health * 100).ToString();
-                    GameIsOver("Player2");
-                }
-                foreach (Transform child in other.gameObject.transform)
-                    if (child.tag == other.gameObject.GetComponent<P2OnContact>().ObjectInWand)
-                        child.GetComponent<MeshRenderer>().enabled = false;
-                other.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
-                other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
-            }
-        }
-        else
-        {
-            if (other.tag == playerTag && other.gameObject.GetComponent<P2OnContact>().WandIsFull)
+        //if (playerTag == "Player1")
+        //{
+            if (other.tag == "Player2" && other.gameObject.GetComponent<P2OnContact>().WandIsFull)
             {
                 if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
                 {
@@ -114,7 +74,7 @@ public class HomeContact : MonoBehaviour
                     other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
                 }
             }
-            if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
+            if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag == "Player1")
             {
                 health -= damagePoint;
                 int x = (int)(health * 100);
@@ -124,7 +84,7 @@ public class HomeContact : MonoBehaviour
                 {
                     health = 0;
                     healthText.text = (health * 100).ToString();
-                    GameIsOver("Player1");
+                    GameIsOver("Player2");
                 }
                 foreach (Transform child in other.gameObject.transform)
                     if (child.tag == other.gameObject.GetComponent<P1OnContact>().ObjectInWand)
@@ -133,7 +93,47 @@ public class HomeContact : MonoBehaviour
                 other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
             }
         }
-    }
+        //else
+        //{
+        //    if (other.tag == playerTag && other.gameObject.GetComponent<P2OnContact>().WandIsFull)
+        //    {
+        //        if (other.gameObject.GetComponent<P2OnContact>().ObjectInWand == "RepairItem")
+        //        {
+        //            health += repairPoint;
+        //            int x = (int)(health * 100);
+        //            healthText.text = x.ToString();
+        //            healthBar.fillAmount = health;
+        //            if (health >= 1)
+        //            {
+        //                GameIsOver(playerTag);
+        //            }
+        //            foreach (Transform child in other.gameObject.transform)
+        //                if (child.tag == other.gameObject.GetComponent<P2OnContact>().ObjectInWand)
+        //                    child.GetComponent<MeshRenderer>().enabled = false;
+        //            other.gameObject.GetComponent<P2OnContact>().ObjectInWand = "";
+        //            other.gameObject.GetComponent<P2OnContact>().WandIsFull = false;
+        //        }
+        //    }
+        //    if (other.gameObject.GetComponent<P1OnContact>().ObjectInWand == "DamageItem" && other.tag != playerTag)
+        //    {
+        //        health -= damagePoint;
+        //        int x = (int)(health * 100);
+        //        healthText.text = x.ToString();
+        //        healthBar.fillAmount = health;
+        //        if (health <= 0.01)
+        //        {
+        //            health = 0;
+        //            healthText.text = (health * 100).ToString();
+        //            GameIsOver("Player1");
+        //        }
+        //        foreach (Transform child in other.gameObject.transform)
+        //            if (child.tag == other.gameObject.GetComponent<P1OnContact>().ObjectInWand)
+        //                child.GetComponent<MeshRenderer>().enabled = false;
+        //        other.gameObject.GetComponent<P1OnContact>().ObjectInWand = "";
+        //        other.gameObject.GetComponent<P1OnContact>().WandIsFull = false;
+        //    }
+        //}
+    //}
     public void GameIsOver(string tag)
     {
         if (tag == "Player1")
