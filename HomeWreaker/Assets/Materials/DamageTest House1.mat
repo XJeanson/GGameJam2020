@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DamageTest
+  m_Name: DamageTest House1
   m_Shader: {fileID: 4800000, guid: 984f67c3bbdc0a24c98ecce0717cb920, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

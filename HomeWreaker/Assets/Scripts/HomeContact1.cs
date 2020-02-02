@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HomeContact : MonoBehaviour
+public class HomeContact1 : MonoBehaviour
 {
     public float repairPoint;
     public float damagePoint;
@@ -30,21 +30,21 @@ public class HomeContact : MonoBehaviour
     {
         if((health >= 0)&&(health <= 0.3))
         {
-            foreach(GameObject child in GameObject.FindGameObjectsWithTag("houseChild"))
+            foreach(GameObject child in GameObject.FindGameObjectsWithTag("houseChild1"))
             {
                 child.GetComponent<MeshRenderer>().material.SetFloat("_Cracks", 0.9f);
             }
         }
         else if(health == 0.5)
         {
-            foreach (GameObject child in GameObject.FindGameObjectsWithTag("houseChild"))
+            foreach (GameObject child in GameObject.FindGameObjectsWithTag("houseChild1"))
             {
                 child.GetComponent<MeshRenderer>().material.SetFloat("_Cracks", 0.5f);
             }
         }
         else if((health >= 0.7)&&(health <= 1))
         {
-            foreach (GameObject child in GameObject.FindGameObjectsWithTag("houseChild"))
+            foreach (GameObject child in GameObject.FindGameObjectsWithTag("houseChild1"))
             {
                 child.GetComponent<MeshRenderer>().material.SetFloat("_Cracks", 0.2f);
             }

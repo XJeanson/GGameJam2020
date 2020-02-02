@@ -11,6 +11,8 @@ TagManager:
   - HUD
   - DamageItem
   - P2Home
+  - houseChild
+  - houseChild1
   layers:
   - Default
   - TransparentFX

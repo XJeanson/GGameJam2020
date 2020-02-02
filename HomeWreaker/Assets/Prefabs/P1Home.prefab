@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 5291082199395138933}
   m_Layer: 0
   m_Name: HouseRoofEdge (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -158,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 5411918259002805441}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -237,7 +237,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 1846434220230516681}
   m_Layer: 0
   m_Name: HouseWall
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -316,7 +316,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 6493676646931807628}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (4)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -395,7 +395,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 1733872287105140274}
   m_Layer: 0
   m_Name: HouseRoofEdge
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -474,7 +474,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 6606566918921729979}
   m_Layer: 0
   m_Name: HouseWallCorner (3)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -645,7 +645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 4673287859469990915}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (6)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -724,7 +724,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 67479978331304452}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (8)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -803,7 +803,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 3587191129384319582}
   m_Layer: 0
   m_Name: HouseRoofEdge (3)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -882,7 +882,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 4582022462126858674}
   m_Layer: 0
   m_Name: HouseRoofEdge (2)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -961,7 +961,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 7488700751427107856}
   m_Layer: 0
   m_Name: HouseWallRoofSlanted (2)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1040,7 +1040,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1074,7 +1074,7 @@ GameObject:
   - component: {fileID: 1375053660929542857}
   m_Layer: 0
   m_Name: HouseWallRoofSlanted (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1119,7 +1119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 3897317742009549435}
   m_Layer: 0
   m_Name: HouseWallCorner
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1198,7 +1198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 2817213737073943181}
   m_Layer: 0
   m_Name: HouseRoofEdge (4)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1277,7 +1277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1311,7 +1311,7 @@ GameObject:
   - component: {fileID: 7604078787053039202}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (5)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1356,7 +1356,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 2619146844401192989}
   m_Layer: 0
   m_Name: Tile_Foundations_01
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1435,7 +1435,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 7089354221450667471}
   m_Layer: 0
   m_Name: HouseWallRoofSlanted (3)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1514,7 +1514,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 2534161003452203403}
   m_Layer: 0
   m_Name: HouseWindow
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1593,7 +1593,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 4128516299257426518}
   m_Layer: 0
   m_Name: HouseWindow (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1785,7 +1785,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 5932458058153569029}
   m_Layer: 0
   m_Name: HouseDoorFrame
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1864,7 +1864,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1990,7 +1990,7 @@ GameObject:
   - component: {fileID: 2286402430956724281}
   m_Layer: 0
   m_Name: HouseWall (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2035,7 +2035,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2069,7 +2069,7 @@ GameObject:
   - component: {fileID: 4120511092107545016}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (3)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2114,7 +2114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 8800846426306750466}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (7)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2193,7 +2193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2227,7 +2227,7 @@ GameObject:
   - component: {fileID: 9181123327244774235}
   m_Layer: 0
   m_Name: HouseDoor
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2272,7 +2272,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 796342628566417775}
   m_Layer: 0
   m_Name: HouseWallRoofSlanted
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2351,7 +2351,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2385,7 +2385,7 @@ GameObject:
   - component: {fileID: 5113346382481230932}
   m_Layer: 0
   m_Name: HouseRoofEdge (5)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2430,7 +2430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2464,7 +2464,7 @@ GameObject:
   - component: {fileID: 8353285364445410179}
   m_Layer: 0
   m_Name: HouseWallCorner (2)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2509,7 +2509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2543,7 +2543,7 @@ GameObject:
   - component: {fileID: 8232999735620178288}
   m_Layer: 0
   m_Name: HouseWallCorner (1)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2588,7 +2588,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2622,7 +2622,7 @@ GameObject:
   - component: {fileID: 9114543937475200671}
   m_Layer: 0
   m_Name: Tile_Foundations_01 (2)
-  m_TagString: Untagged
+  m_TagString: houseChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2667,7 +2667,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7eb30854189eb94cb6199bbd44c1904, type: 2}
+  - {fileID: 2100000, guid: a17c7d42c544b3441a642ad7e590b2ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
